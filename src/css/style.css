@@ -1,0 +1,109 @@
+*, body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; }
+
+.header-contacts {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  text-transform: uppercase; }
+  .header-contacts__phone {
+    margin-right: 30px; }
+
+.button-general {
+  padding: 13px 22px;
+  background-color: #ff9d00;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #ffffff; }
+  .button-general img {
+    margin-right: 7px;
+    vertical-align: middle; }
+
+.input-general {
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  color: #373737;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 42px; }
+  .input-general:focus {
+    outline: none; }
+
+.main {
+  position: relative;
+  padding: 65px 0;
+  z-index: 1;
+  color: #ffffff;
+  background: #403b34 url("../img/main/background.jpg") center no-repeat;
+  background-size: cover; }
+  .main img {
+    max-width: 100%; }
+  .main::before {
+    content: '';
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; }
+  .main-img {
+    position: relative; }
+    .main-img::before {
+      position: absolute;
+      content: '';
+      display: block;
+      border: 1px solid #ffffff;
+      border-radius: 50%;
+      width: 390px;
+      height: 390px;
+      z-index: -1;
+      left: 40px; }
+    .main-img::after {
+      content: url("../img/main/rst.png");
+      position: absolute;
+      left: 80px;
+      bottom: -10px; }
+  .main-text__title {
+    font-size: 41px;
+    font-weight: 700;
+    line-height: 42px;
+    margin-bottom: 15px; }
+  .main-text__subtitle {
+    font-size: 28px;
+    font-weight: 300; }
+  .main-text__form {
+    padding: 27px 30px;
+    padding-bottom: 56px;
+    margin-top: 24px;
+    background-color: rgba(255, 255, 255, 0.2); }
+  .main-text__addition {
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px; }
+
+.form-title {
+  margin-bottom: 20px;
+  padding-right: 87px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px; }
+  .form-title__span {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase; }
+
+.input-main {
+  min-width: 60%;
+  padding-left: 19px;
+  margin-right: 8px; }
