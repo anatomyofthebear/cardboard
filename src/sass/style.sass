@@ -20,10 +20,11 @@ $general-orange: #ff9d00;
 
 .button-general
 	padding: 13px 22px
-
+	cursor: pointer
 	background-color: $general-orange
 	border: none
 	border-radius: 5px
+	outline: none
 
 	font-size: 14px
 	font-weight: 400
@@ -126,3 +127,68 @@ $general-orange: #ff9d00;
 	min-width: 60%
 	padding-left: 19px
 	margin-right: 8px
+
+.overlay
+	display: none
+	position: fixed
+	background: rgba(0, 0, 0, 0.5)
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 3
+
+	.popup
+		position: fixed
+		text-align: center
+		top: 100px
+		right: 50%
+		transform: translateX(50%)
+		color: #ffffff
+		background: #ffffff url('../img/popup/background.jpg') center no-repeat
+		background-size: cover
+		width: 752px
+
+		&-span
+			display:block
+			font-size: 24px
+
+		&-title
+			font-size: 21px
+			font-weight: 500
+			line-height: 22px
+			text-transform: uppercase
+			text-align: center
+			background: $general-orange
+			padding: 23px 0
+
+		&-form
+			&__header
+				font-size: 30px
+				font-weight: 400
+				line-height: 27px
+
+				padding: 41px 0 23px 0
+
+			&__title
+				font-size: 20px
+				font-weight: 300
+				line-height: 30px
+				margin-bottom: 17px
+
+			&__addition
+				font-size: 14px
+				font-weight: 300
+				line-height: 30px
+				margin-top: 9px
+				margin-bottom: 50px
+	
+		#close
+			font-size: 32px
+			font-weight: 300
+			position: fixed
+			top: -30px
+			right: -17px
+			cursor: pointer
+			
+

@@ -33,7 +33,7 @@
 						<div class="header-contacts justify-content-end">
 							<div class="header-contacts__phone">8 (347) 271-54-28</div>
 							<div class="header-contacts__phone">8 (937) 363-30-00</div>
-							<button class="button-general">
+							<button class="button-general" id="header-contacts__button">
 								<img src="img/header/phone.png" alt="Телефон">
 									Заказать звонок
 								</button>
@@ -90,6 +90,29 @@
 		</section>
 		<!-- /.main -->
 
+
+		<section class="overlay">
+			<div class="popup">
+				<div class="popup-title">форма обратной связи</div>
+				<div class="popup-form">
+					<div class="popup-form__header">
+						Получите индивидуальное предложение <br>
+						<span class="popup-span">на производство и поставку изделий</span>
+					</div>
+					<div class="popup-form__title">
+						Введите ваш номер телефона:
+					</div>
+					<form action="#" class="form">
+						<input class="input-general input-main" type="tel" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ">
+						<button class="button-general" type="submit">Оставить заявку</button>
+					</form>
+					<p class="popup-form__addition">*Минимальный заказ 500шт</p>
+				</div>
+
+				<div id="close">&times;</div>
+			</div>
+		</section>
+
 		<!-- Bootstrap core JavaScript ================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -98,5 +121,6 @@
 		<script src="../../../../dist/js/bootstrap.min.js"></script>
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 		<script src="../../../../assets/js/ie10-viewport-bug-workaround.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
