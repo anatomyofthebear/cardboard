@@ -14,6 +14,12 @@
   .header-contacts__phone {
     margin-right: 30px; }
 
+.header-logo img {
+  max-width: 100%; }
+
+.header-logo__small {
+  display: none; }
+
 .button-general {
   padding: 13px 22px;
   cursor: pointer;
@@ -162,3 +168,55 @@
       top: -30px;
       right: -17px;
       cursor: pointer; }
+
+@media screen and (max-width: 320px) {
+  .header-logo {
+    background-color: #ff9d00;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 4px; }
+    .header-logo__small {
+      display: inline-block; }
+  .header-contacts__phone {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 0; }
+    .header-contacts__phones {
+      margin-right: 14px; }
+  .sm-hide {
+    display: none; }
+  .text-bold {
+    font-weight: 700; }
+  #header-contacts__button {
+    padding: 7px; }
+    #header-contacts__button img {
+      margin: 0; }
+  .main {
+    text-align: center; }
+    .main-text__title {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 24px;
+      color: #ff9d00; }
+    .main-text__subtitle {
+      font-size: 18px;
+      font-weight: 400; }
+    .main-text__form {
+      background: none;
+      padding: 0;
+      margin-top: 40px; }
+    .main .form-title {
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 18px;
+      padding: 0; }
+      .main .form-title__span {
+        margin-top: 15px; }
+  .input-main {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 13px;
+    padding-left: 0; } }

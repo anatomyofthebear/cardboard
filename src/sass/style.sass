@@ -4,19 +4,27 @@ $general-orange: #ff9d00;
 	margin: 0
 	font-family: 'Roboto', sans-serif
 
-.header-contacts
-	display: flex
-	justify-content: flex-end
-	align-items: center
-	padding: 15px 0
+.header
+	&-contacts
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		padding: 15px 0
 
-	font-size: 22px
-	font-weight: 400
-	line-height: 22px
-	text-transform: uppercase
-	
-	&__phone
-		margin-right: 30px
+		font-size: 22px
+		font-weight: 400
+		line-height: 22px
+		text-transform: uppercase
+		
+		&__phone
+			margin-right: 30px
+	&-logo
+
+		img
+			max-width: 100%
+		
+		&__small
+			display: none		
 
 .button-general
 	padding: 13px 22px
@@ -190,5 +198,5 @@ $general-orange: #ff9d00;
 			top: -30px
 			right: -17px
 			cursor: pointer
-			
 
+@import '_media.sass'

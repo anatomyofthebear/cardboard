@@ -22,20 +22,23 @@
 		<header class="header">
 			<div class="container">
 				<div class="row align-items-center">
-					<div class="col-md-4">
+					<div class="col-4 col-md-4">
 						<div class="header-logo">
-							<img src="img/header/logo.png" alt="Хороший картон">
+							<img class="header-logo__big sm-hide" src="img/header/logo.png" alt="Хороший картон">
+							<img class="header-logo__small" src="img/header/sm-logo.png" alt="Хороший картон">
 						</div>
 					</div>
 					<!-- /.col-md-4 -->
 
-					<div class="col-md-8">
+					<div class="col-8 col-md-8">
 						<div class="header-contacts justify-content-end">
-							<div class="header-contacts__phone">8 (347) 271-54-28</div>
-							<div class="header-contacts__phone">8 (937) 363-30-00</div>
+							<div class="header-contacts__phones">
+								<div class="header-contacts__phone">8 (347) <span class="text-bold">271-54-28</span></div>
+								<div class="header-contacts__phone">8 (937) <span class="text-bold">363-30-00</span></div>
+							</div>
 							<button class="button-general" id="header-contacts__button">
 								<img src="img/header/phone.png" alt="Телефон">
-									Заказать звонок
+									<span class="sm-hide">Заказать звонок</span>
 								</button>
 						</div>
 						<!-- /.header-contacts -->
@@ -52,7 +55,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-5">
-						<div class="main-img">
+						<div class="main-img sm-hide">
 							<img src="img/main/boxs.png" alt="">
 						</div>
 					</div>
